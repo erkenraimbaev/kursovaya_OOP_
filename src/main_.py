@@ -149,7 +149,7 @@ def user_interaction():
     filter_word = input('Введите название вакансии для поиска:\n')
     parametres['text'] = filter_word
     user_area = input('Введите нужный вам регион:\n')
-    parametres['area'] = user_area
+    parametres['area'] = user_area.title()
     user_count_page = input('Введите желаемое число вакансий\n')
     parametres['page'] = int(user_count_page)
     return parametres
